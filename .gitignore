@@ -15,3 +15,5 @@ plugins/\.DS_Store
 \.DS_Store
 
 produkcja/
+
+prepros-6\.config
