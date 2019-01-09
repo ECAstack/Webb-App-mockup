@@ -1,0 +1,17 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Useful .gitignore templates: https://github.com/github/gitignore
+
+\.history/
+
+css/\.DS_Store
+
+js/\.DS_Store
+
+js/vendor/\.DS_Store
+
+plugins/\.DS_Store
+
+\.DS_Store
+
+produkcja/
