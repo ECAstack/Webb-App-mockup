@@ -17,11 +17,21 @@
     <!-- JS scripts and plugins [ Starts pharsing JS async with CSS ] -->
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        $(".add-circle").on("click", function() {
+          $('.task-form').addClass('active');
+        });
+        $(".task-form .times-btn").on("click", function() {
+          $('.task-form').removeClass('active');
+        });
+      });
+    </script>
 
-    <!-- NAV Bar Scripts -->
-    <!-- Bulma CSS -->
-    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/sanitize-min.css" />
   </head>
 
   <body>
@@ -42,6 +52,101 @@
       </section>
       <div class="add-circle"><i class="fas fa-4x fa-plus-circle"></i></div>
     </div>
+    <link rel="stylesheet" href="css/content-area-min.css" />
+    <div class="content-area">
+      <div class="content-area__inner">
+        <div class="task-box">
+          <div class="task-box__inner">
+            <div class="title">Clean room</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Drink beer</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="task-box__inner">
+            <div class="title">Go gym</div>
+            <div class="title-date">Utworzono 12 Lipca 2011</div>
+            <div class="check-box"><i class="fas fa-check"></i></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <link rel="stylesheet" href="css/task-form-min.css" />
+    <div class="task-form">
+        <div class="times-btn"><i class="fas fa-times"></i></div>
+      <form>
+        <h3>Add a task</h3>
+        <label>Title:</label> <input type="text" name="" id="" />
+      </form>
+      <form>
+        <h3>Add a task</h3>
+        <label>Category:</label> <input type="text" name="" id="" />
+      </form>
+      <form><label>Notes:</label> <textarea name="notes"></textarea></form>
+      <form>      <button type="submit" class="close-btn">Add new task</button></textarea></form>
+    </div>
+
+
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

@@ -17,3 +17,5 @@ plugins/\.DS_Store
 produkcja/
 
 prepros-6\.config
+
+\.vscode/settings\.json
